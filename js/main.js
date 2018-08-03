@@ -16,7 +16,7 @@ let parser = new RSSParser();
 parser.parseURL(CORS_PROXY + 'https://www.reddit.com/.rss', function(err, feed) {
     // console.log(feed.title);
     // console.log("feed", feed);
-    feed.items.slice(-5).forEach(function(entry) {
+    feed.items.slice(-10).forEach(function(entry) {
 
         // console.log(entry.title + ':' + entry.link);
 
@@ -26,3 +26,8 @@ parser.parseURL(CORS_PROXY + 'https://www.reddit.com/.rss', function(err, feed) 
 
     })
 })
+
+
+$(document).ready(function() {
+    $('#reddit > :not(table)').hide();
+});

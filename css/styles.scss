@@ -95,3 +95,19 @@ justify-content: space-evenly;
   padding:20px 0;
   font-size: 30px;
 }
+
+
+#reddit {
+     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+     // grid-auto-rows: 200px;
+
+}
+
+
+div:empty {
+ height: 50px;
+ width: 50px;
+ background-color: red;
+}
