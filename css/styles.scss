@@ -1,0 +1,97 @@
+#fractal-wrapper {
+    // width: 75%;
+    // height: 200px;
+    // background-color: blue;
+}
+
+
+.fractal-div {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.feed-title {
+    font-size: 30px;
+    color: red;
+    a {
+        color: red;
+    }
+}
+
+.feed-title-image {}
+
+.rss2html-note {
+    display: none;
+}
+
+h4 {
+    &.feed-item-title {
+        margin: 5px;
+        a {
+            color: green;
+            text-decoration: none;
+            font-size: 14px;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+
+.feed-item-title {
+    &:before {
+        content: "\f105";
+        font-family: FontAwesome;
+        margin-right: 10px;
+    }
+}
+
+.title {
+    color: red;
+    font-size: 22px;
+}
+
+
+.link {
+    color: black;
+}
+
+
+
+.grid-container {
+    display: grid; // "fr" is a fraction unit
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-template-columns: 250px repeat(12, 1fr);
+    // grid-template-rows: 1fr 1fr 1fr;
+    // grid-gap: 10px 10px;
+grid-gap: 1rem;
+justify-content: space-evenly;
+// justify-content: space-around;
+// justify-content: space-between;
+// justify-content: center;
+// justify-content: start;
+// justify-content: end;
+
+    color: red;
+    background-color: blue;
+    border: 1px solid pink;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 20;
+}
+
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding:20px 0;
+  font-size: 30px;
+}
